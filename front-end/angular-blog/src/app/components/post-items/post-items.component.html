@@ -1,0 +1,12 @@
+<div class="bg-black text-white rounded-md">
+  <p>Title : {{ post?.title }}</p>
+  <p>By: {{ post?.author?.author_name }}</p>
+  <p>published on: {{ post?.publish_date }}</p>
+  <p>Category: {{ post?.category }}</p>
+  <p>Description: {{ post?.description }}</p>
+
+  <div class=" space-x-72">
+    <button onclick="updatePost()" class="rounded-md p-2 bg-green-700">Update</button>
+    <button onclick="deletePost()" class="rounded-md p-2 bg-red-700">Delete</button>
+  </div>
+</div>

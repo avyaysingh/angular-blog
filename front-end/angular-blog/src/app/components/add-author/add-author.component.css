@@ -1,0 +1,36 @@
+.add-author-form {
+  border: 2px solid #e74c3c;
+  padding: 2rem;
+}
+
+.add-author-form label {
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.add-author-form input {
+  display: block;
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+
+#sendBtn {
+  border: 0;
+  background: #343050;
+  padding: 0.5rem;
+  color: #fff;
+  margin: 0.5rem 0;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  background: #3498db;
+}
+
+h2 {
+  text-align: center;
+}

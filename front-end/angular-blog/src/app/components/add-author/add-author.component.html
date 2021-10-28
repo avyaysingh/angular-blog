@@ -1,0 +1,30 @@
+<h2>Add Author</h2>
+<form
+  [formGroup]="addAuthorForm"
+  (ngSubmit)="onAddAuthor()"
+  class="add-author-form"
+>
+  <div>
+    <label for="author_name">Name</label>
+    <input
+      formControlName="author_name"
+      id="author_name"
+      name="author_name"
+      type="text"
+      placeholder="author_name"
+      required
+    />
+  </div>
+  <div>
+    <label for="author_email">Email</label>
+    <input
+      formControlName="author_email"
+      type="author_email"
+      name="author_email"
+      id="author_email"
+      placeholder="author@email.com"
+      required
+    />
+  </div>
+  <input type="submit" value="Add Author" id="sendBtn" />
+</form>
