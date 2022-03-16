@@ -4,7 +4,6 @@ const authorRoute = require("./routes/authorRoute");
 const postRoute = require("./routes/postRoute");
 const commentRoute = require("./routes/commentRoute");
 const cors = require("cors");
-const { dirname } = require("path");
 
 const app = express();
 app.use(cors());
