@@ -16,6 +16,10 @@ const Author = db.define("author", {
     type: Sequelize.STRING,
     allowNull: false,
   },
+  author_password:{
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
 });
 
 module.exports = Author;

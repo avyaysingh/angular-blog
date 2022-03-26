@@ -1,4 +1,5 @@
 const express = require("express");
+const dotenv = require("dotenv").config();
 const path = require("path");
 const authorRoute = require("./routes/authorRoute");
 const postRoute = require("./routes/postRoute");
@@ -26,6 +27,8 @@ app.use(postRoute);
 //comment routes
 app.use(commentRoute);
 
+
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`server started at PORT: ${PORT}`));
 
@@ -48,3 +51,8 @@ app.listen(PORT, console.log(`server started at PORT: ${PORT}`));
 //   .catch((err) => {
 //     console.log(err);
 //   });
+
+
+// or choose any of the sync
+// sequelize.sync({ force: false, alter: true })
+
